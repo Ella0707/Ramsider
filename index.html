@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/fullpage.min.css"> -->
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Start</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <button class="header__burger-menu mobile">
+                    <img src="./img/menu-open.svg" alt="">
+                    <span>menu</span>
+                </button>
+                <a href="/" class="header__logo">
+                    <img class="desctop" src="./img/logo.png" alt="">
+                    <img class="mobile" src="./img/text_logo.svg" alt="">
+                    <span class="desctop">RAMSIDER</span>
+                </a>
+                <div class="header__menu">
+                    <nav class="header__nav desctop">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="header__nav-item open-sub-menu">
+                                <button>
+                                    Коллекции
+                                    <img src="./img/arrow-down.svg" alt="">
+                                </button>
+                                <div class="header__sub-menu">
+                                    <ul class="header__sub-list">
+                                        <li class="header__sub-item">
+                                            <a href="">UNO</a>
+                                        </li>
+                                        <li class="header__sub-item">
+                                            <a href="">CUBOS SOLO</a>
+                                        </li>
+                                        <li class="header__sub-item">
+                                            <a href="">CUBOS INTERO</a>
+                                        </li>
+                                        <li class="header__sub-item">
+                                            <a href="">SOSUDA SOLO</a>
+                                        </li>
+                                        <li class="header__sub-item">
+                                            <a href="">SOSUDA INTERA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Для бизнеса</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="/" class="header__personal desctop">
+                        <img src="./img/personal.png" alt="">
+                    </a>
+                    <div class="languages">
+                        <div class="languages__lang-menu">
+                            <div class="languages__selected-lang">
+                                <span>RU</span> 
+                                <img src="./img/flag_ru.png" />
+                            </div>
+                            <div class="languages__lang">
+                                <a href="/">
+                                    <span>ENG</span>
+                                    <img src="./img/flag_en.svg" alt="eng" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="fullpage">
+            <section class="banner section">
+                <video class="desctop" muted="" autoplay="" loop="" playsinline="" data-autoplay 
+                    poster="./img/main_video_poster_desktop.jpg">
+                    <source src="./video/main_video_desktop.mp4" type="video/mp4">
+                </video>
+                <video class="mobile" muted="" autoplay="" loop="" playsinline="" data-autoplay 
+                    poster="./img/main-video-poster-mobile.webp">
+                    <source src="./video/main-banner-mobile.mp4" type="video/mp4">
+                </video>
+                <div class="banner__scroll scroll desctop">
+                    <span>ПРОКРУТИТЬ ВНИЗ</span>
+                    <!-- <img src="./img/arrow-down.svg" alt=""> -->
+                    <svg viewBox="428.298 0 71.702 18.165" xmlns="http://www.w3.org/2000/svg">
+                        <defs></defs>
+                        <path
+                            style="stroke: #fff; fill: rgba(255, 255, 255, 0); stroke-width: 5px; stroke-linecap: round;"
+                            d="M 431.166 2.868 L 463.671 16.253 L 497.132 2.868"></path>
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="banner__content desctop">
+                        <h1 class="banner__title">RAMSIDER</h1>
+                        <h2 class="banner__subtitle">ЭЛЕКТРОННЫЕ КАЛЬЯНЫ</h2>
+                        <div class="banner__logo">
+                            <img src="./img/banner-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="more section">
+                <img src="./img/main_desktop_girl.png" alt="">
+                <div class="container">
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
