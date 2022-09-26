@@ -25,6 +25,13 @@
                 height: 3.2rem;
                 object-fit: contain;
                 margin-right: 2rem;
+
+                &.close {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    object-fit: contain;
+                    display: none;
+                }
             }
 
             span {
@@ -32,6 +39,18 @@
                 font-size: 2.5rem;
                 color: #fff;
                 text-transform: uppercase;
+            }
+
+            &.active {
+
+                img {
+                    &.close {
+                        display: block;
+                    }
+                    &.open {
+                        display: none;
+                    }
+                }
             }
         }
     

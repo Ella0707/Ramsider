@@ -16,7 +16,8 @@
         <div class="container">
             <div class="header__inner">
                 <button class="header__burger-btn mobile">
-                    <img src="./img/menu-open.svg" alt="">
+                    <img class="open" src="./img/menu-open.svg" alt="">
+                    <img class="close" src="./img/menu-close.svg" alt="">
                     <span>menu</span>
                 </button>
                 <a href="/" class="header__logo">
@@ -103,7 +104,6 @@
                 </video>
                 <div class="banner__scroll scroll desctop">
                     <span>ПРОКРУТИТЬ ВНИЗ</span>
-                    <!-- <img src="./img/arrow-down.svg" alt=""> -->
                     <svg viewBox="428.298 0 71.702 18.165" xmlns="http://www.w3.org/2000/svg">
                         <defs></defs>
                         <path
@@ -122,10 +122,114 @@
                 </div>
             </section>
 
-            <section class="more section">
-                <img src="./img/main_desktop_girl.png" alt="">
+            <section class="more section desctop">
+                <video class="desctop" muted="" autoplay="" loop="" playsinline="" data-autoplay
+                    poster="./img/main_desktop_girl.png">
+                    <source src="./video/main_girl_sect2.mp4" type="video/mp4">
+                </video>
+                <div class="scroll desctop">
+                    <svg viewBox="428.298 0 71.702 18.165" xmlns="http://www.w3.org/2000/svg">
+                        <defs></defs>
+                        <path
+                            style="stroke: #000; fill: rgba(255, 255, 255, 0); stroke-width: 4px; stroke-linecap: round;"
+                            d="M 431.166 2.868 L 463.671 16.253 L 497.132 2.868"></path>
+                    </svg>
+                </div>
                 <div class="container">
+                    <div class="more__content">
+                        <h2 class="more__title">Хотите узнать больше?</h2>
+                    </div>
+                </div>
+            </section>
 
+            <section class="about section">
+                <video class="about__video" playsinline="" poster="./img/about-poster.jpg">
+                    <source src="./video/about-video.mp4" type="video/mp4">
+                </video>
+                <button class="about__video-btn">
+                    <img src="./img/play-btn.svg" alt="">
+                </button>
+                <div class="about__scroll scroll desctop">
+                    <!-- <span>ПРОКРУТИТЬ ВНИЗ</span> -->
+                    <svg viewBox="428.298 0 71.702 18.165" xmlns="http://www.w3.org/2000/svg">
+                        <defs></defs>
+                        <path
+                            style="stroke: rgba(155,155,155,1); fill: rgba(255, 255, 255, 0); stroke-width: 4px; stroke-linecap: round;"
+                            d="M 431.166 2.868 L 463.671 16.253 L 497.132 2.868"></path>
+                    </svg>
+                </div>
+            </section>
+            <section class="products section">
+                <div class="container">
+                    <div class="products__inner">
+                        <div class="products__slider swiper">
+                            <div class="products__slider-wrapper swiper-wrapper">
+                                <div class="products__slide swiper-slide">
+                                    <div class="products__prev">cubos intero</div>
+                                    <div class="products__next">cubos solo</div>
+
+                                    <h2 class="products__title">uno</h2>
+                                    <h3 class="products__subtitle">Этот инновационный курительный девайс представляет из себя высокотехнологичную систему доставки премиального 
+                                        ароматизированного дыма, 
+                                        способную удовлетворить самых 
+                                        требовательных ценителей.
+                                    </h3>
+                                    <video class="products__video" muted="" autoplay="" loop="" playsinline="" data-autoplay poster="./img/uno-poster.webp">
+                                        <source src="./video/Uno.mp4" type="video/mp4">
+                                    </video>
+                                    <a href="/" class="products__link">Узнать больше</a>
+                                    <a href="/" class="products__buy-btn">
+                                        <span>Заказать</span>
+                                        <img src="./img/btn-pay.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="products__slide swiper-slide">
+                                    <div class="products__prev">uno</div>
+                                    <div class="products__next">cubos intero</div>
+
+                                    <h2 class="products__title">cubos solo</h2>
+                                    <h3 class="products__subtitle">Полностью автономная 
+                                        многофункциональная кальянная станция 
+                                        RAMSIDER с функциями самоочистки, дезинфекции и 
+                                        управлением со смартфона.
+                                    </h3>
+                                    <video class="products__video" muted="" autoplay="" loop="" playsinline="" data-autoplay>
+                                        <source src="./video/cubos-solo.mp4" type="video/mp4">
+                                    </video>
+                                    <a href="/" class="products__link">Узнать больше</a>
+                                    <a href="/" class="products__buy-btn">
+                                        <span>Заказать</span>
+                                        <img src="./img/btn-pay.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="products__slide swiper-slide">
+                                    <div class="products__prev">cubos solo</div>
+                                    <div class="products__next">uno</div>
+
+                                    <h2 class="products__title">cubos intero</h2>
+                                    <h3 class="products__subtitle">Король всех кальянов. 
+                                        Конструкция в максимальной комплектации содержит: видеопроектор, аудиосистему премиум-класса, ЖК-дисплей с сенсорным экраном, встроенный чайник и систему динамической подсветки. Кальян оснащен уникальной технологией охлаждения дыма, 
+                                        функциями самоочистки и дезинфекции, 
+                                        а также интеллектуальным управлением со смартфона.
+                                    </h3>
+                                        <video class="products__video" muted="" autoplay="" loop="" playsinline="" data-autoplay>
+                                            <source src="./video/cubos-solo.mp4" type="video/mp4">
+                                        </video>
+                                    <a href="/" class="products__link">Узнать больше</a>
+                                    <a href="/" class="products__buy-btn">
+                                        <span>Заказать</span>
+                                        <img src="./img/btn-pay.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__slider-arrow-prev">
+                                <img src="./img/slider-arrow.svg" alt="">
+                            </div>
+                            <div class="products__slider-arrow-next">
+                                <img src="./img/slider-arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

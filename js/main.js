@@ -55,3 +55,61 @@ $('.header__burger-btn').on('click', function (e) {
 });
 
 
+// воспроизведение видео в секции about на главной странице
+
+let videoAbout = document.querySelector('.about__video');
+let videoBtn = document.querySelector('.about__video-btn');
+let header = document.querySelector('.header');
+
+videoBtn.addEventListener('click', function() {
+  videoPlay();
+});
+  
+videoAbout.addEventListener('click', function() {
+  videoPlay();
+});
+
+function videoPlay() {
+  videoAbout.classList.toggle('active');
+
+  if (videoAbout.classList.contains('active')) {
+    videoAbout.play();
+    videoBtn.style = 'display: none';
+    header.classList.add('hide');
+  } 
+  else {
+    videoAbout.pause();
+    videoBtn.style = 'display: block';
+    header.classList.remove('hide');
+  }
+}
+
+function videoStopinScroll() {
+  videoAbout.pause();
+  videoAbout.classList.remove('active');
+  videoBtn.style = 'display: block';
+  header.classList.remove('hide');
+}
+
+const observer = new IntersectionObserver(videoStopinScroll, {
+  rootMargin: '0px',
+  threshold: 1
+});
+
+observer.observe(videoAbout);
+
+
+
+const projectsSwiper = new Swiper('.products__slider', {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  loop: true,
+  speed: 800,
+
+  effect: "fade",
+
+  navigation: {
+      prevEl: '.products__slider-arrow-prev',
+      nextEl: '.products__slider-arrow-next',
+  },
+});
