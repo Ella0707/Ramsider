@@ -43,4 +43,15 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
       button.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
     }
   })
-})
+});
+
+
+// меню
+$('.header__burger-btn').on('click', function (e) {
+  e.preventDefault();
+  document.body.classList.toggle('lock');
+  $('.header__burger-btn').toggleClass("active");
+  $('.header__nav').toggleClass("active");
+});
+
+
