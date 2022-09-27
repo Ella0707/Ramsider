@@ -102,7 +102,7 @@ observer.observe(videoAbout);
 
 const projectsSwiper = new Swiper('.products__slider', {
   slidesPerView: 1,
-  spaceBetween: 15,
+  spaceBetween: 45,
   loop: true,
   speed: 800,
 
@@ -111,5 +111,20 @@ const projectsSwiper = new Swiper('.products__slider', {
   navigation: {
       prevEl: '.products__slider-arrow-prev',
       nextEl: '.products__slider-arrow-next',
+  },
+});
+
+const priceSwiper = new Swiper('.products__price', {
+  slidesPerView: 'auto',
+  // spaceBetween: 15,
+  loop: true,
+  speed: 800,
+  direction: "vertical",
+
+  // effect: "fade",
+
+  navigation: {
+      prevEl: '.products__price-prev',
+      nextEl: '.products__price-next',
   },
 });

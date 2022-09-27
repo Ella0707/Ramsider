@@ -500,6 +500,68 @@
             transform: rotate(-180deg);
         }
     }
+
+    &__price {
+        position: absolute;
+        top: 20vh;
+        right: 10%;
+        height: 10rem;
+        width: 20rem;
+        overflow: hidden;
+    }
+
+    &__price-wrapper {
+        position: relative;
+    }
+
+    &__price-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        width: 100%;
+        height: 100%;
+
+        .value {
+            margin-right: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    &__price-prev {
+        width: 2rem;
+        height: 2rem;
+
+        position: absolute;
+        top: 0rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+      
+    }
+
+    &__price-next {
+        width: 2rem;
+        height: 2rem;
+
+        position: absolute;
+        bottom: 0rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }
 
 
