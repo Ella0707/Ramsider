@@ -810,6 +810,202 @@ input[type=number] {
      object-fit: contain;
 }
 
+.dreams {
+  height: 100vh;
+}
+.dreams__inner {
+  padding: 10vh 0 5vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.dreams__title {
+  color: #000;
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 4vh;
+}
+.dreams__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 5rem;
+     -moz-column-gap: 5rem;
+          column-gap: 5rem;
+  margin-bottom: 4vh;
+}
+.dreams__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dreams__item-video {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 4rem;
+}
+.dreams__item-video video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.dreams__item-title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.dreams__item-subtitle {
+  font-size: 2.5rem;
+  letter-spacing: 0.18px;
+  text-align: center;
+}
+.technology {
+  height: 100vh;
+}
+.technology__video {
+  height: 40vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.technology__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  height: 60vh;
+  padding: 3vh 0 10vh;
+  margin: 0 auto;
+}
+.technology__title {
+  font-size: 3.5vh;
+  font-weight: 500;
+  margin-bottom: 4vh;
+}
+.technology__subtitle {
+  font-size: 3vh;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+.technology__text {
+  font-size: 2.6vh;
+  text-align: center;
+}
+.technology__text p:not(:last-child) {
+  margin-bottom: 2vh;
+}
+
+.innovation {
+  height: 100vh;
+}
+.innovation__inner {
+  padding: 15vh 0 5vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.innovation__title {
+  color: #000;
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 4vh;
+}
+.innovation__subtitle {
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 4vh;
+}
+.innovation__text {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+.innovation__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 5rem;
+     -moz-column-gap: 5rem;
+          column-gap: 5rem;
+  margin-bottom: 4vh;
+}
+.innovation__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.innovation__item-video {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 4rem;
+}
+.innovation__item-video video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.innovation__item-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
 .mobile {
   display: none;
 }
