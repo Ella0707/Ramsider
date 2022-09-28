@@ -398,7 +398,7 @@
     }
     
     &__prev {
-        font-size: 4vh;
+        font-size: 2.7vh;
         text-transform: uppercase;
 
         position: absolute;
@@ -408,7 +408,7 @@
     }
     
     &__next {
-        font-size: 4vh;
+        font-size: 2.7vh;
         text-transform: uppercase;
 
         position: absolute;
@@ -657,6 +657,7 @@
         font-size: 3.5vh;
         font-weight: 500;
         margin-bottom: 4vh;
+        text-align: center;
     }
     
     &__subtitle {
@@ -684,7 +685,7 @@
         padding: 15vh 0 5vh 0;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -695,14 +696,14 @@
         font-size: 5rem;
         font-weight: 300;
         text-transform: uppercase;
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
     }
     
     &__subtitle {
         font-size: 3.5rem;
         font-weight: 300;
         text-transform: uppercase;
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
     }
     
     &__text {
@@ -710,14 +711,14 @@
         font-weight: 300;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
     }
     
     &__content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 5rem;
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
     }
     
     &__item {
@@ -730,7 +731,7 @@
     &__item-video {
         width: 15rem;
         height: 15rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3vh;
 
         video {
             height: 100%;
@@ -744,8 +745,272 @@
         text-align: center;
         font-size: 2rem;
         font-weight: 400;
-        margin-bottom: 3rem;
+        margin-bottom: 3vh;
     }
-
 }
 
+.process {
+    height: 100vh;
+
+
+    &__inner {
+        padding: 15vh 0 5vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__video-block {
+        width: 40%;
+        height: 100%;
+
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__text-block {
+        width: 50%;
+    }
+    &__title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-bottom: 5vh;
+    }
+
+    &__text {
+        font-size: 3rem;
+        line-height: 1.4;
+    }
+}
+
+
+.cartridge {
+    height: 100vh;
+
+    &__inner {
+        padding: 15vh 0 0vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    &__title {
+        font-size: 3.5vh;
+        margin-bottom: 4vh;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__subtitle {
+        font-size: 2.8vh;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 3rem;
+        margin-bottom: 4vh;
+    }
+
+    &__item {
+        display: flex;
+        width: 100%;
+    
+    }
+
+    &__item-num {
+        font-size: 2.5vh;
+        font-weight: 500;
+        margin-right: 2rem;
+
+    
+    }
+    &__item-text {
+        font-size: 1.7vh;
+        text-transform: capitalize;
+    }
+    &__video {
+        height: 55vh;
+        width: 100%;
+        object-fit: cover;
+        margin-top: auto;
+    }
+}
+
+.for-business {
+    height: 100vh;
+
+
+    &__inner {
+        padding: 10vh 0 5vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__video-block {
+        width: 40%;
+        height: 100%;
+
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__text-block {
+        width: 50%;
+    }
+    &__title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-bottom: 5vh;
+    }
+
+    &__subtitle {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        margin-bottom: 3vh;
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        line-height: 1.4;
+        margin-bottom: 3vh;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link-wrap {
+        width: 50%;
+
+        span {
+            font-size: 1.2rem;
+            display: block;
+            font-size: 2rem;
+        }
+    }
+    &__link {
+        display: block;
+        width: max-content;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 2rem;
+
+        &::before {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: #000;
+
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+        }
+    }
+}
+
+
+
+.interface {
+    height: 100vh;
+
+
+    &__inner {
+        padding: 10vh 0 5vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__video-block {
+        width: 40%;
+        height: 100%;
+
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__text-block {
+        width: 50%;
+    }
+    &__title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-bottom: 5vh;
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        line-height: 1.4;
+        margin-bottom: 3vh;
+        width: 80%;
+    }
+
+    &__link-wrap {
+        width: 50%;
+
+        span {
+            font-size: 1.2rem;
+            display: block;
+            font-size: 2rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: max-content;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 2rem;
+
+        &::before {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: #000;
+
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+        }
+    }
+}
