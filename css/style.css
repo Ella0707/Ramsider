@@ -1079,6 +1079,7 @@ input[type=number] {
           flex-direction: column;
   height: 100vh;
   width: 100%;
+  overflow-y: auto;
 }
 .cartridge__title {
   font-size: 3.5vh;
@@ -1112,7 +1113,7 @@ input[type=number] {
   margin-right: 2rem;
 }
 .cartridge__item-text {
-  font-size: 1.7vh;
+  font-size: 2vh;
   text-transform: capitalize;
 }
 .cartridge__video {
@@ -1121,6 +1122,8 @@ input[type=number] {
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: auto;
+  position: relative;
+  z-index: -1;
 }
 
 .for-business {
@@ -1295,6 +1298,81 @@ input[type=number] {
   position: absolute;
   bottom: -0.5rem;
   left: 0;
+}
+
+.gallery {
+  height: 100vh;
+}
+.gallery__inner {
+  padding: 10vh 0 5vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.gallery__title {
+  font-size: 4vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+.gallery__slider {
+  margin-bottom: 4vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.gallery__slide {
+  height: 50rem;
+  width: 70rem;
+  cursor: pointer;
+}
+.gallery__slide img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery__arrow-prev {
+  position: absolute;
+  top: 50%;
+  left: -8rem;
+  z-index: 10;
+  width: 4rem;
+  height: 15rem;
+  cursor: pointer;
+}
+.gallery__arrow-prev img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gallery__arrow-next {
+  position: absolute;
+  top: 50%;
+  right: -8rem;
+  z-index: 10;
+  width: 4rem;
+  height: 15rem;
+  cursor: pointer;
+}
+.gallery__arrow-next img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.gallery__small {
+  font-size: 1.8rem;
 }
 
 .mobile {

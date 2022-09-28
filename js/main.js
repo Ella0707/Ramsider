@@ -128,3 +128,31 @@ const priceSwiper = new Swiper('.products__price', {
       nextEl: '.products__price-next',
   },
 });
+
+
+const gallerySwiper = new Swiper('.gallery__slider', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  speed: 800,
+
+  navigation: {
+      prevEl: '.gallery__arrow-prev',
+      nextEl: '.gallery__arrow-next',
+  },
+});
+
+const swiperPrev = document.getElementsByClassName('gallery__arrow-prev')
+const swiperNext = document.getElementsByClassName('gallery__arrow-next')
+
+swiperPrev.addEventListener('click', () => {
+  gallerySwiper.slidePrev();
+})
+swiperNext.addEventListener('click', () => {
+  gallerySwiper.slideNext();
+});
+
+
+Fancybox.show(gallery, {
+  // Your options go here
+});
