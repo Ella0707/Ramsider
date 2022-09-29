@@ -161,6 +161,26 @@ const priceSwiper = new Swiper('.products__price', {
   },
 });
 
+const vidGalleryThumbs = new Swiper(".videogallery__thumbs-slider", {
+  spaceBetween: 10,
+  slidesPerView: 5,
+  // loop: true,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+const vidGallery = new Swiper(".videogallery__slider", {
+  // slidesPerView: 1,
+  spaceBetween: 10,
+  // loop: true,
+  navigation: {
+    nextEl: ".videogallery__arrow-next",
+    prevEl: ".videogallery__arrow-prev",
+  },
+  thumbs: {
+    swiper: vidGalleryThumbs,
+  },
+});
 
 const gallerySwiper = new Swiper('.gallery__slider', {
   slidesPerView: 3,
@@ -174,8 +194,22 @@ const gallerySwiper = new Swiper('.gallery__slider', {
   },
 });
 
-const swiperPrev = document.getElementsByClassName('gallery__arrow-prev')
-const swiperNext = document.getElementsByClassName('gallery__arrow-next')
+
+$(document).ready(function(){
+	$('.news__item-btn').click(function(){
+		$('.news__item-text').toggleClass('hide');	
+		if ($('.news__item-text').hasClass('hide')) {
+			$('.news__item-btn').html('Подробнее');
+		} else {
+			$('.news__item-btn').html('Скрыть');
+		}		
+		return false;
+	});				
+});
+  
+
+const swiperPrev = document.getElementsByClassName('gallery__arrow-prev');
+const swiperNext = document.getElementsByClassName('gallery__arrow-next');
 
 swiperPrev.addEventListener('click', () => {
   gallerySwiper.slidePrev();
@@ -184,7 +218,27 @@ swiperNext.addEventListener('click', () => {
   gallerySwiper.slideNext();
 });
 
+const swiperPrevVidGallery = document.getElementsByClassName('videogallery__arrow-prev');
+const swiperNextVidGallery = document.getElementsByClassName('videogallery__arrow-next');
+
+swiperPrevVidGallery.addEventListener('click', () => {
+  vidGallery.slidePrev();
+})
+swiperNextVidGallery.addEventListener('click', () => {
+  vidGallery.slideNext();
+});
+
+
+
 
 Fancybox.show(gallery, {
   // Your options go here
 });
+
+Fancybox.show(vidgallery, {
+  // Your options go here
+});
+
+
+
+
