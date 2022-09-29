@@ -14,12 +14,44 @@ langImgs.forEach(img => {
     })
 });
 
-new fullpage('#fullpage', {
-	//options here
-	// autoScrolling:true,
-	// scrollHorizontally: true
-  responsiveWidth: 769,
+// new fullpage('#fullpage', {
+// 	//options here
+// 	// autoScrolling:false,
+//   css3: true,
+// 	// scrollHorizontally: true
+//   responsiveWidth: 769,
+//   scrollBar: true
+// });
+
+$(function() {
+  $.scrollify({
+    section : ".section",
+    // sectionName : "section-name",
+    // interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    // standardScrollElements: "",
+    setHeights: false,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll: false,
+    afterResize: function() {
+      if( $(window).width() < 769) {
+        $.scrollify.disable()
+      }else{
+        $.scrollify.enable()
+      }
+    }
+    // before:function() {},
+    // after:function() {},
+    // afterResize:function() {},
+    // afterRender:function() {}
+  });
 });
+
+
 
 let langLink = document.querySelector('.languages__selected-lang');
 let langLinkSelect = document.querySelector('.languages__lang');

@@ -806,6 +806,10 @@
         height: 100vh;
         width: 100%;
         overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
     }
     &__title {
         font-size: 3.5vh;
@@ -1032,6 +1036,13 @@
         height: 100vh;
 
         position: relative;
+        // overflow-y: scroll;
+
+
+
+    // &::-webkit-scrollbar {
+    //     width: 0;
+    // }
     }
     &__title {
         font-size: 4vh;
@@ -1050,8 +1061,8 @@
     }
 
     &__slide {
-        height: 50rem;
-        width: 70rem;
+        // height: 40vh;
+        // width: 40vw;
         cursor: pointer;
 
         img {

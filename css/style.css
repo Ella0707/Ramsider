@@ -1081,6 +1081,9 @@ input[type=number] {
   width: 100%;
   overflow-y: auto;
 }
+.cartridge__inner::-webkit-scrollbar {
+  width: 0;
+}
 .cartridge__title {
   font-size: 3.5vh;
   margin-bottom: 4vh;
@@ -1331,8 +1334,6 @@ input[type=number] {
   overflow: hidden;
 }
 .gallery__slide {
-  height: 50rem;
-  width: 70rem;
   cursor: pointer;
 }
 .gallery__slide img {
