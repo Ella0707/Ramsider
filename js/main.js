@@ -195,18 +195,23 @@ const gallerySwiper = new Swiper('.gallery__slider', {
 });
 
 
-$(document).ready(function(){
-	$('.news__item-btn').click(function(){
-		$('.news__item-text').toggleClass('hide');	
-		if ($('.news__item-text').hasClass('hide')) {
-			$('.news__item-btn').html('Подробнее');
-		} else {
-			$('.news__item-btn').html('Скрыть');
-		}		
-		return false;
-	});				
+// $(document).ready(function(){
+// 	$('.news__item-btn').click(function(){
+// 		$('.news__item-text').toggleClass('hide');	
+// 		if ($('.news__item-text').hasClass('hide')) {
+// 			$('.news__item-btn').html('Подробнее');
+// 		} else {
+// 			$('.news__item-btn').html('Скрыть');
+// 		}		
+// 		return false;
+// 	});				
+// });
+
+$(document).ready(function () {
+  $('.news__item-btn').click(function (event) {
+      $(this).toggleClass('active').prev().toggleClass('hide');
+  });
 });
-  
 
 const swiperPrev = document.getElementsByClassName('gallery__arrow-prev');
 const swiperNext = document.getElementsByClassName('gallery__arrow-next');

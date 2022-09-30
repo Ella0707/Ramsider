@@ -1248,9 +1248,11 @@
         font-size: 2vh;
         overflow: hidden;
 	position: relative;   
+    height: 15vh;
+    transition: 0.3s;
     
     &.hide {
-        height: 15vh;
+        height: auto;
 
         &:after{
             content: "";

@@ -1489,9 +1489,12 @@ input[type=number] {
   font-size: 2vh;
   overflow: hidden;
   position: relative;
+  height: 15vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .news__item-text.hide {
-  height: 15vh;
+  height: auto;
 }
 .news__item-text.hide:after {
   content: "";
