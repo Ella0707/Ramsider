@@ -71,6 +71,10 @@
         visibility: hidden;
     }
 
+    &.dark {
+        background: rgb(16 15 15 / 70%);
+    }
+
     &__inner {
         display: flex;
         align-items: center;
@@ -792,6 +796,14 @@
     &__text {
         font-size: 3rem;
         line-height: 1.4;
+
+        &.italic {
+            font-family: "Roboto-Italic";
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2vh;
+        }
     }
 }
 
