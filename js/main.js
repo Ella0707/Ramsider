@@ -32,11 +32,11 @@ $(function() {
     scrollSpeed: 1100,
     offset : 0,
     scrollbars: true,
-    // standardScrollElements: "",
     setHeights: false,
     overflowScroll: true,
     updateHash: true,
     touchScroll: false,
+  
     afterResize: function() {
       if( $(window).width() < 769) {
         $.scrollify.disable()
@@ -209,7 +209,7 @@ const gallerySwiper = new Swiper('.gallery__slider', {
 
 $(document).ready(function () {
   $('.news__item-btn').click(function (event) {
-      $(this).toggleClass('active').prev().toggleClass('hide');
+    $(this).toggleClass('active').prev().toggleClass('show');
   });
 });
 
