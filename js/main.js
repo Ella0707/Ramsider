@@ -28,6 +28,7 @@ $(function() {
     section : ".section",
     // sectionName : "section-name",
     // interstitialSection : "",
+    standardScrollElements: ".footer",
     easing: "easeOutExpo",
     scrollSpeed: 1100,
     offset : 0,
@@ -210,6 +211,7 @@ const gallerySwiper = new Swiper('.gallery__slider', {
 $(document).ready(function () {
   $('.news__item-btn').click(function (event) {
     $(this).toggleClass('active').prev().toggleClass('show');
+    $(this).parent().children(".news__item-banner").slideToggle()  
   });
 });
 
