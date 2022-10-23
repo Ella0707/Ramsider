@@ -199,6 +199,350 @@
             }
         }
     }
+
+    .banner {
+        flex-direction: column;
+        height: 100vh;
+        margin-bottom: 10rem;
+        video {
+            // position: static;
+            height: 90vh;
+        }
+
+        &__more {
+            margin-top: auto;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .about-mob {
+        margin-bottom: 10rem;
+        overflow: hidden;
+
+        &__slider {
+            overflow-x: hidden;
+        }
+
+        &__slider-wrapper {
+            margin-bottom: 5rem;
+        }
+
+        &__slider-slide {
+            width: 100%;
+            height: 70rem;
+        }
+
+        &__slider-slide-link {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .images {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .videoplay {
+                width: 5rem;
+                height: 5rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+            }
+        }
+        
+        &__slider-pagination {
+            position: static;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5rem;
+
+            .swiper-pagination-bullet {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 0;
+                opacity: .8;
+                box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 10%);
+
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+
+                &:nth-child(1) {
+                    background: url(../img/russia.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                &:nth-child(2) {
+                    background: url(../img/germany.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &:nth-child(3) {
+                    background: url(../img/ispany.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &:nth-child(4) {
+                    background: url(../img/oae.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &:nth-child(5) {
+                    background: url(../img/english.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+
+        &__link-gallery {
+            display: flex;
+            align-items: center;
+        }
+
+        &__link-btn {
+            width: 10rem;
+            height: 10rem;
+            margin-right: 2.5rem;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                color: #fff;
+                z-index: 1;
+            }
+        }
+        
+        &__link-text {
+            font-size: 2.8rem;
+        }
+    }
+
+    .products-mob {
+        
+        &__inner {
+        
+        }
+        
+        &__item {
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 8rem;
+            }
+        
+        }
+        
+        &__item-subtitle {
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #a7a7a7;
+            font-size: 2.4rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        
+        &__slider {
+            position: relative;
+        
+        }
+        .swiper {
+        }
+        
+        &__slider-wrapper {
+        
+        }
+        .swiper-wrapper {
+        }
+        
+        &__slider-slide {
+            width: 100%;
+            height: 50rem;
+
+            video {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        
+        }
+        .swiper-slide {        }
+        .video-index {
+        }
+        .lazy-video {
+        }
+        
+        &__slider-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2rem;
+            z-index: 10;
+            width: 5rem;
+            height: 5rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        
+        }
+        
+        &__slider-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            right: 2rem;
+            width: 5rem;
+            height: 5rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        
+        
+        }
+        
+        &__pagination {
+            position: static;
+            margin-bottom: 2rem;
+            .swiper-pagination-bullet {
+                opacity: 0.8;
+
+            }
+
+            .swiper-pagination-bullet:nth-child(1) {
+                background: #ffffff;
+                border: 1px solid #aaa;
+            }
+
+            .swiper-pagination-bullet:nth-child(2) {
+                background-color: #b80027;
+                border: 1px solid #b80027;
+            }
+
+            .swiper-pagination-bullet:nth-child(3) {
+                background-color: #000;
+                border: 1px solid #000;
+            }
+
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+                transform: scale(1.3);
+            }
+        
+        }
+        .swiper-pagination {
+        }
+        
+        &__item-link {
+            font-weight: 300;
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-bottom: 5.6rem;
+            margin-bottom: 4rem;
+            text-align: center;
+            display: block;
+        
+        }
+
+        &__description {
+            font-weight: 300;
+            text-align: left;
+            margin-bottom: 5.2rem;
+            line-height: 1.4;
+            margin-bottom: 3rem;
+        }
+        
+        &__item-info {
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #a7a7a7;
+            font-size: 2.6rem;
+            margin-bottom: 4rem;
+            text-align: center;
+            display: block;
+        
+        }
+        
+        &__item-price {
+            font-weight: 700;
+            font-size: 6rem;
+            margin-bottom: 5rem;
+            color: #454545;
+            text-align: center;
+        }
+        
+        &__item-pay {
+            width: 20rem;
+            height: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #fff;
+            position: relative;
+            margin: 0 auto;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+            }
+        
+        }
+
+    }
+   
+    
 }
 
 

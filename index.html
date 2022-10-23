@@ -100,9 +100,10 @@
                     <source src="./video/main_video_desktop.mp4" type="video/mp4">
                 </video>
                 <video class="mobile" muted="" autoplay="" loop="" playsinline="" data-autoplay
-                    poster="./img/main-video-poster-mobile.webp">
-                    <source src="./video/main-banner-mobile.mp4" type="video/mp4">
+                    poster="./img/main-black.webp">
+                    <source src="./video/main-black.mp4" type="video/mp4">
                 </video>
+                <div class="banner__more mobile">ХОТИТЕ УЗНАТЬ БОЛЬШЕ?</div>
                 <div class="banner__scroll scroll desctop">
                     <span>ПРОКРУТИТЬ ВНИЗ</span>
                     <svg viewBox="428.298 0 71.702 18.165" xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +144,7 @@
                 </div>
             </section>
 
-            <section class="about section">
+            <section class="about section desctop">
                 <video class="about__video" playsinline="" poster="./img/about-poster.jpg">
                     <source src="./video/about-video.mp4" type="video/mp4">
                 </video>
@@ -160,7 +161,61 @@
                     </svg>
                 </div>
             </section>
-            <section class="products section">
+            <section class="about-mob mobile">
+                <div class="container">
+                    <div class="about-mob__inner">
+                        <div class="about-mob__slider swiper">
+                            <div class="about-mob__slider-wrapper swiper-wrapper">
+                                <div class="about-mob__slider-slide swiper-slide">
+                                    <a class="about-mob__slider-slide-link" href="./video/about-video.mp4"
+                                        data-fancybox="gallery-index">
+                                        <img class="images" src="./img/about-mob.jpg">
+                                        <img class="videoplay" src="./img/play-btn.svg" alt="play">
+                                    </a>
+                                </div>
+                                <div class="about-mob__slider-slide swiper-slide">
+                                    <a class="about-mob__slider-slide-link" href="./video/b2c-rev-german_1.mp4"
+                                        data-fancybox="gallery-index">
+                                        <img class="images" src="./img/about-mob.jpg">
+                                        <img class="videoplay" src="./img/play-btn.svg" alt="play">
+                                    </a>
+                                </div>
+                                <div class="about-mob__slider-slide swiper-slide">
+                                    <a class="about-mob__slider-slide-link" href="./video/b2c-rev-gold-arabian_1.mp4"
+                                        data-fancybox="gallery-index">
+                                        <img class="images" src="./img/about-mob.jpg">
+                                        <img class="videoplay" src="./img/play-btn.svg" alt="play">
+                                    </a>
+                                </div>
+                                <div class="about-mob__slider-slide swiper-slide">
+                                    <a class="about-mob__slider-slide-link" href="./video/b2c-rev-spain_1.mp4"
+                                        data-fancybox="gallery-index">
+                                        <img class="images" src="./img/about-mob.jpg">
+                                        <img class="videoplay" src="./img/play-btn.svg" alt="play">
+                                    </a>
+                                </div>
+                                <div class="about-mob__slider-slide swiper-slide">
+                                    <a class="about-mob__slider-slide-link" href="./video/b2c-rep-eng.mp4"
+                                        data-fancybox="gallery-index">
+                                        <img class="images" src="./img/about-mob.jpg">
+                                        <img class="videoplay" src="./img/play-btn.svg" alt="play">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-mob__slider-pagination swiper-pagination"></div>
+                        <a href="" class="about-mob__link-gallery">
+                            <div class="about-mob__link-btn">
+                                <img src="./img/btn-pay.svg" alt="">
+                                <span>галерея</span>
+                            </div>
+                            <div class="about-mob__link-text">Посмотреть больше видео</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="products section desctop">
                 <div class="container">
                     <div class="products__inner">
                         <div class="products__slider swiper">
@@ -297,7 +352,280 @@
                 </div>
             </section>
 
-            <section class="dreams section">
+            <section class="products-mob mobile">
+                <div class="container">
+                    <div class="products-mob__inner">
+                        <div class="products-mob__item">
+                            <h2>UNO</h2>
+                            <p class="products-mob__item-subtitle">ПЕРВЫЙ В МИРЕ ЭЛЕКТРОННЫЙ КАЛЬЯН
+                                НА НАТУРАЛЬНОМ ТАБАКЕ</p>
+                            <div class="products-mob__slider swiper">
+                                <div class="products-mob__slider-wrapper swiper-wrapper">
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-white.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-red.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-black.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="products-mob__slider-prev">
+                                    <img src="./img/left-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__slider-next">
+                                    <img src="./img/right-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__pagination swiper-pagination"></div>
+                            </div>
+                            <a href="" class="products-mob__item-link">УЗНАТЬ БОЛЬШЕ ОБ UNO</a>
+                            <p class="products-mob__description">
+                                Этот инновационный
+                                курительный девайс представляет из себя высокотехнологичную
+                                систему доставки премиального
+                                ароматизированного дыма, способную удовлетворить
+                                самых требовательных ценителей.
+                            </p>
+                            <p class="products-mob__item-info">
+                                ДОСТАВКА В ПЕРВОЙ ПОЛОВИНЕ 2023 ГОДА
+                            </p>
+                            <p class="products-mob__item-info">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
+                            <p class="products-mob__item-price">830 BYN</p>
+                            <a href="" class="products-mob__item-pay">
+                                <img src="./img/btn-pay.svg" alt="">
+                                <span>Заказать</span>
+                            </a>
+                        </div>
+                        <div class="products-mob__item">
+                            <h2>CUBOS SOLO</h2>
+                            <p class="products-mob__item-subtitle">ПОЛНОЕ ИЗОБИЛИЕ</p>
+                            <div class="products-mob__slider swiper">
+                                <div class="products-mob__slider-wrapper swiper-wrapper">
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-white.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-red.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-black.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="products-mob__slider-prev">
+                                    <img src="./img/left-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__slider-next">
+                                    <img src="./img/right-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__pagination swiper-pagination"></div>
+                            </div>
+                            <a href="" class="products-mob__item-link">УЗНАТЬ БОЛЬШЕ ОБ CUBOS SOLO</a>
+                            <p class="products-mob__description">
+                                Полностью автономная многофункциональная кальянная станция 
+                                RAMSIDER с функциями самоочистки, дезинфекции и управлением со смартфона.
+                            </p>
+                            <p class="products-mob__item-info">
+                                ДОСТАВКА В ПЕРВОЙ ПОЛОВИНЕ 2023 ГОДА
+                            </p>
+                            <p class="products-mob__item-info">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
+                            <p class="products-mob__item-price">1570 BYN</p>
+                            <a href="" class="products-mob__item-pay">
+                                <img src="./img/btn-pay.svg" alt="">
+                                <span>Заказать</span>
+                            </a>
+                        </div>
+                        <div class="products-mob__item">
+                            <h2>UNO</h2>
+                            <p class="products-mob__item-subtitle">ПЕРВЫЙ В МИРЕ ЭЛЕКТРОННЫЙ КАЛЬЯН
+                                НА НАТУРАЛЬНОМ ТАБАКЕ</p>
+                            <div class="products-mob__slider swiper">
+                                <div class="products-mob__slider-wrapper swiper-wrapper">
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-white.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-red.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-black.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="products-mob__slider-prev">
+                                    <img src="./img/left-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__slider-next">
+                                    <img src="./img/right-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__pagination swiper-pagination"></div>
+                            </div>
+                            <a href="" class="products-mob__item-link">УЗНАТЬ БОЛЬШЕ ОБ UNO</a>
+                            <p class="products-mob__description">
+                                Этот инновационный
+                                курительный девайс представляет из себя высокотехнологичную
+                                систему доставки премиального
+                                ароматизированного дыма, способную удовлетворить
+                                самых требовательных ценителей.
+                            </p>
+                            <p class="products-mob__item-info">
+                                ДОСТАВКА В ПЕРВОЙ ПОЛОВИНЕ 2023 ГОДА
+                            </p>
+                            <p class="products-mob__item-info">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
+                            <p class="products-mob__item-price">830 BYN</p>
+                            <a href="" class="products-mob__item-pay">
+                                <img src="./img/btn-pay.svg" alt="">
+                                <span>Заказать</span>
+                            </a>
+                        </div>
+                        <div class="products-mob__item">
+                            <h2>UNO</h2>
+                            <p class="products-mob__item-subtitle">ПЕРВЫЙ В МИРЕ ЭЛЕКТРОННЫЙ КАЛЬЯН
+                                НА НАТУРАЛЬНОМ ТАБАКЕ</p>
+                            <div class="products-mob__slider swiper">
+                                <div class="products-mob__slider-wrapper swiper-wrapper">
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-white.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-red.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-black.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="products-mob__slider-prev">
+                                    <img src="./img/left-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__slider-next">
+                                    <img src="./img/right-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__pagination swiper-pagination"></div>
+                            </div>
+                            <a href="" class="products-mob__item-link">УЗНАТЬ БОЛЬШЕ ОБ UNO</a>
+                            <p class="products-mob__description">
+                                Этот инновационный
+                                курительный девайс представляет из себя высокотехнологичную
+                                систему доставки премиального
+                                ароматизированного дыма, способную удовлетворить
+                                самых требовательных ценителей.
+                            </p>
+                            <p class="products-mob__item-info">
+                                ДОСТАВКА В ПЕРВОЙ ПОЛОВИНЕ 2023 ГОДА
+                            </p>
+                            <p class="products-mob__item-info">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
+                            <p class="products-mob__item-price">830 BYN</p>
+                            <a href="" class="products-mob__item-pay">
+                                <img src="./img/btn-pay.svg" alt="">
+                                <span>Заказать</span>
+                            </a>
+                        </div>
+                        <div class="products-mob__item">
+                            <h2>UNO</h2>
+                            <p class="products-mob__item-subtitle">ПЕРВЫЙ В МИРЕ ЭЛЕКТРОННЫЙ КАЛЬЯН
+                                НА НАТУРАЛЬНОМ ТАБАКЕ</p>
+                            <div class="products-mob__slider swiper">
+                                <div class="products-mob__slider-wrapper swiper-wrapper">
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-white.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-red.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="products-mob__slider-slide swiper-slide">
+                                        <video class="video-index lazy-video" muted="" playsinline=""
+                                            autoplay="autoplay" loop="true"
+                                            poster="assets/images/uno/viz-uno-white.webp">
+                                            <source src="./video/uno-black.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="products-mob__slider-prev">
+                                    <img src="./img/left-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__slider-next">
+                                    <img src="./img/right-arrow-icon.svg" alt="">
+                                </div>
+                                <div class="products-mob__pagination swiper-pagination"></div>
+                            </div>
+                            <a href="" class="products-mob__item-link">УЗНАТЬ БОЛЬШЕ ОБ UNO</a>
+                            <p class="products-mob__description">
+                                Этот инновационный
+                                курительный девайс представляет из себя высокотехнологичную
+                                систему доставки премиального
+                                ароматизированного дыма, способную удовлетворить
+                                самых требовательных ценителей.
+                            </p>
+                            <p class="products-mob__item-info">
+                                ДОСТАВКА В ПЕРВОЙ ПОЛОВИНЕ 2023 ГОДА
+                            </p>
+                            <p class="products-mob__item-info">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
+                            <p class="products-mob__item-price">830 BYN</p>
+                            <a href="" class="products-mob__item-pay">
+                                <img src="./img/btn-pay.svg" alt="">
+                                <span>Заказать</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dreams section desctop">
                 <div class="container">
                     <div class="dreams__inner">
                         <h2 class="dreams__title">ВСЕ, О ЧЕМ ВЫ МОГЛИ ТОЛЬКО МЕЧТАТЬ</h2>
@@ -338,7 +666,7 @@
                     </div>
                 </div>
             </section>
-            <section class="technology section">
+            <section class="technology section desctop">
                 <video class="technology__video" muted="" autoplay="" loop="" playsinline="" data-autoplay>
                     <source src="./video/electronic.mp4" type="video/mp4">
                 </video>
@@ -359,7 +687,7 @@
                     </div>
                 </div>
             </section>
-            <section class="innovation section">
+            <section class="innovation section desctop">
                 <div class="container">
                     <div class="innovation__inner">
                         <h2 class="innovation__title">ИННОВАЦИИ</h2>
@@ -404,7 +732,7 @@
                     </div>
                 </div>
             </section>
-            <section class="process section">
+            <section class="process section desctop">
                 <div class="container">
                     <div class="process__inner">
                         <div class="process__content">
@@ -429,7 +757,7 @@
                     </div>
                 </div>
             </section>
-            <section class="cartridge section">
+            <section class="cartridge section desctop">
                 <div class="cartridge__inner">
                     <div class="container">
                         <div class="cartridge__content">
@@ -474,7 +802,7 @@
                     </video>
                 </div>
             </section>
-            <section class="for-business section">
+            <section class="for-business section desctop">
                 <div class="container">
                     <div class="for-business__inner">
                         <div class="for-business__content">
@@ -512,7 +840,7 @@
                 </div>
             </section>
 
-            <section class="interface section">
+            <section class="interface section desctop">
                 <div class="container">
                     <div class="interface__inner">
                         <div class="interface__content">
@@ -540,7 +868,7 @@
                 </div>
             </section>
 
-            <section class="gallery section">
+            <section class="gallery section desctop">
                 <div class="gallery__arrow-prev">
                     <img src="./img/slider-arrow.svg" alt="">
                 </div>
@@ -681,7 +1009,7 @@
                 </div>
             </section>
 
-            <section class="videogallery section">
+            <section class="videogallery section desctop">
                 <div class="videogallery__arrow-prev">
                     <img src="./img/slider-arrow.svg" alt="">
                 </div>
@@ -842,7 +1170,7 @@
                 </div>
             </section>
 
-            <section class="news section">
+            <section class="news section desctop">
                 <div class="container">
                     <div class="news__inner">
                         <h2 class="news__title">НОВОСТИ</h2>
@@ -902,7 +1230,7 @@
                 </div>
             </section>
 
-            <section class="logistics section">
+            <section class="logistics section desctop">
                 <div class="container">
                     <div class="logistics__inner">
                         <h2 class="logistics__title">RAMSIDER ЛОГИСТИКА</h2>
